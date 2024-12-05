@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube 视频</title>
+    <title>YouTube Videos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -15,7 +15,7 @@
             padding: 0;
         }
 
-        /* 页面整体样式 */
+        /* Overall page style */
         .video-container {
             max-width: 1000px;
             margin: 30px auto;
@@ -25,7 +25,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
-        /* 每个视频块 */
+        /* Each video block */
         .video-block {
             margin-bottom: 30px;
             padding: 20px;
@@ -53,7 +53,7 @@
             border-radius: 10px;
         }
 
-        /* 返回按钮样式 */
+        /* Back button style */
         .back-button {
             display: inline-block;
             padding: 10px 20px;
@@ -72,43 +72,48 @@
     </style>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <h1>YouTube Videos</h1>
 
-    <h1>YouTube 视频</h1>
-
-    <!-- 视频块 1 -->
+    <!-- Video Block 1 -->
     <div class="video-container">
         <div class="video-block">
-            <div class="video-title">视频标题 1</div>
-            <div class="video-description">这是视频 1 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <div class="video-title">Video Title 1</div>
+            <div class="video-description">This is the description for Video 1.</div>
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- 视频块 2 -->
+    <!-- Video Block 2 -->
     <div class="video-container">
         <div class="video-block">
-            <div class="video-title">视频标题 2</div>
-            <div class="video-description">这是视频 2 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <div class="video-title">Video Title 2</div>
+            <div class="video-description">This is the description for Video 2.</div>
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- 视频块 3 -->
+    <!-- Video Block 3 -->
     <div class="video-container">
         <div class="video-block">
-            <div class="video-title">视频标题 3</div>
-            <div class="video-description">这是视频 3 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <div class="video-title">Video Title 3</div>
+            <div class="video-description">This is the description for Video 3.</div>
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- 导航栏 -->
+    <!-- Navigation Bar -->
     <div class="menu">
-        <a href="index.html">主页</a>
-        <a href="youtube.html">YouTube 视频</a>
-        <a href="diary.html">我的日记</a>
-        <a href="schedule.html">我的时间表</a>
+        <a href="index.html">Home</a>
+        <a href="youtube.html">YouTube Videos</a>
+        <a href="diary.html">My Diary</a>
+        <a href="schedule.html">My Schedule</a>
     </div>
+
+    <!-- Link to particle effect JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Link to custom JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
