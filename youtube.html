@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 视频</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 页面整体样式 */
+        .video-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* 每个视频块 */
+        .video-block {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .video-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .video-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        /* 返回按钮样式 */
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .back-button:hover {
+            background-color: #ff9900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>YouTube 视频</h1>
+
+    <!-- 视频块 1 -->
+    <div class="video-container">
+        <div class="video-block">
+            <div class="video-title">视频标题 1</div>
+            <div class="video-description">这是视频 1 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 视频块 2 -->
+    <div class="video-container">
+        <div class="video-block">
+            <div class="video-title">视频标题 2</div>
+            <div class="video-description">这是视频 2 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 视频块 3 -->
+    <div class="video-container">
+        <div class="video-block">
+            <div class="video-title">视频标题 3</div>
+            <div class="video-description">这是视频 3 的简介。这里可以描述视频的内容、背景或相关信息。</div>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="menu">
+        <a href="index.html">主页</a>
+        <a href="youtube.html">YouTube 视频</a>
+        <a href="diary.html">我的日记</a>
+        <a href="schedule.html">我的时间表</a>
+    </div>
+
+</body>
+</html>
