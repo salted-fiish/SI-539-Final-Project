@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Particle effect container -->
+    <div id="particles-js"></div>
+
+    <!-- Page Title -->
+    <h1>Contact Me</h1>
+
+    <!-- Contact Form -->
+    <div class="text">
+        <p>If you have any questions or feedback, feel free to reach out to me using the form below:</p>
+        <form id="contactForm">
+            <div>
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <br>
+            <div>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <br>
+            <div>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="6" required placeholder="Write your message"></textarea>
+            </div>
+            <br>
+            <button type="button" id="sendEmail">Send</button>
+        </form>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="youtube.html">YouTube Videos</a>
+        <a href="diary.html">Diary</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Link to particle effect JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Inline JavaScript for mailto functionality -->
+    <script>
+        document.getElementById('sendEmail').addEventListener('click', function () {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                const mailtoLink = `mailto:runjin@umich.edu?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)} (${encodeURIComponent(email)})`;
+                window.location.href = mailtoLink;
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>

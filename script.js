@@ -1,4 +1,3 @@
-// 粒子特效配置
 particlesJS("particles-js", {
     "particles": {
         "number": {
